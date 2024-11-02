@@ -9,7 +9,7 @@ function binarySearch(haystack: number[], needle: number): number {
         if(v === needle) {
             return m;
         } else if(v > needle) {
-            hi = m;
+            hi = m - 1;
         } else {
             lo = m + 1;
         }
