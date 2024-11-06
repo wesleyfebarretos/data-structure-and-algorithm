@@ -14,8 +14,17 @@ function bubbleSort(arr: number[]): void {
 
 }
 
-const disorderedArr = [5,1,6,10,2,20,1,33,-1,-2,100,20000,-40];
 
-bubbleSort(disorderedArr);
+const _unsortedArr = [100, -1, 300, -1000, 2000, 1225, 22, -22, -12, -1, 22];
 
-console.log(disorderedArr);
+for (let i = 0; i < 10_000; i++) {
+    _unsortedArr.push(Math.random() * i)
+}
+
+const _now = Date.now();
+
+bubbleSort(_unsortedArr);
+
+console.log(Date.now() - _now);
+
+console.log(_unsortedArr);
