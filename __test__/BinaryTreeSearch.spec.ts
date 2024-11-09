@@ -1,12 +1,7 @@
 import InOrderSearch from "../src/BinaryTreeInOrder";
 import postOrderSearch from "../src/BinaryTreePostOrder";
 import preOrderSearch from "../src/BinaryTreePreOrder";
-
-type BTNode<T> = {
-    value: T;
-    left: BTNode<T>;
-    right: BTNode<T>;
-}
+import { BTNode } from "../src/types";
 
 describe("Binary Tree Search", () => {
     let root: BTNode<number>;

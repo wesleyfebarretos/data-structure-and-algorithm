@@ -1,8 +1,4 @@
-type BTNode<T> = {
-    value: T;
-    left: BTNode<T>;
-    right: BTNode<T>;
-}
+import { BTNode } from "./types";
 
 function walk(curr: BTNode<number>, path: number[]): number[] {
     if(!curr) {
@@ -18,6 +14,8 @@ function walk(curr: BTNode<number>, path: number[]): number[] {
 
     return path;
 }
+
+
 
 export default function postOrderSearch(root: BTNode<number>): number[] {
     return walk(root, []);
