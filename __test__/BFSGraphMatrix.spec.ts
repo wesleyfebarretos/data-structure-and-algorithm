@@ -17,5 +17,9 @@ describe("BFS on Graph Adjancency Matrix", () => {
     it('should return path from source to needle', () => {
         expect(bfsGraphMatrix(graph, 0, 4)).toEqual([0,3,1,2,4]);
     })
+
+    it('should return an empty array cause path is not found', () => {
+        expect(bfsGraphMatrix(graph, 0, 5)).toEqual([]);
+    })
 })
 

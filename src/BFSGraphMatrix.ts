@@ -27,7 +27,7 @@ export function bfsGraphMatrix(graph: WeightedAdjacencyMatrix, source: number, n
 
     } while (q.length);
 
-    if(prev[needle] === -1) {
+    if(prev[needle] === -1 || !prev[needle]) {
         return [];
     }
 
